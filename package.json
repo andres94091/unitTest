@@ -1,0 +1,24 @@
+{
+  "name": "unittest",
+  "version": "1.0.0",
+  "description": "Project to study unit tests",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "unittest",
+    "test",
+    "express"
+  ],
+  "author": "Andres C",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "swagger-ui-express": "^4.1.4"
+  }
+}
