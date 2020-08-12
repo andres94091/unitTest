@@ -2,6 +2,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const swaggerUi = require('swagger-ui-express')
 
+const status = require('./api/status/routes')
+
 const app = express()
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -24,5 +26,9 @@ app.use((req, res, next) => {
   // Pass to next layer of middleware
   next();
 })
+
+app.use('/status', status)
+
+
 
 module.exports = app;
