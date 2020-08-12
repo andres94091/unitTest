@@ -3,8 +3,8 @@ const router = express.Router()
 
 const controller = require('../controller')
 
-router.get('/', (req, res) => {
-    controller.status(req, res)
+router.post('/average', (req, res) => {
+    controller.averageResponse(req, res)
 })
 
 module.exports = router

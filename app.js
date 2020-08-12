@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const swaggerUi = require('swagger-ui-express')
 
 const status = require('./api/status/routes')
+const playGround = require('./api/playGround/routes')
 
 const app = express()
 
@@ -28,7 +29,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/status', status)
-
+app.use('/playGround', playGround)
 
 
 module.exports = app;
