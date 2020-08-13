@@ -1,10 +1,11 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
 
-const controller = require('../controller')
+const router = express.Router();
+
+const controller = require('../controller');
 
 router.post('/average', (req, res) => {
-    controller.averageResponse(req, res)
-})
+	controller.averageResponse(req, res);
+});
 
-module.exports = router
+module.exports = router;
